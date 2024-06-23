@@ -18,3 +18,88 @@ h1,
 h2 {
   margin: 0;
 }
+
+.container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: min(160px, 10%);
+  padding-right: min(160px, 10%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1,
+h2,
+td {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 96px;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 80px;
+  color: #9f0908;
+  margin-top: 0;
+  text-align: center;
+}
+
+h3,
+th {
+  font-family: "Economica", sans-serif;
+  font-weight: Bold;
+}
+
+h3 {
+  font-size: 56px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+th {
+  font-size: 56px;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+td {
+  font-size: 32px;
+  padding-bottom: 8px;
+  color: #675e54;
+}
+
+table {
+  width: 100%;
+  max-width: 450px;
+}
+
+footer {
+  background-color: #0a141e;
+  bottom: 0;
+  margin-top: 10px;
+  height: 134px;
+  padding-left: min(160px, 10%);
+  padding-right: min(160px, 10%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
