@@ -1,5 +1,5 @@
 nav {
-  width: 100%;
+  // width: 100%;
   padding: 32px;
   display: flex;
   justify-content: space-between;
@@ -10,6 +10,7 @@ nav {
   > div {
     width: 350px;
     display: flex;
+    gap: 16px;
     > a {
       &:hover {
         color: red;
