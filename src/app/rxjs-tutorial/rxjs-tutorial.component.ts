@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BehaviorSubject, interval, throttle } from 'rxjs';
+import { BehaviorSubject, interval, throttleTime } from 'rxjs';
 
 @Component({
   selector: 'app-rxjs-tutorial',
@@ -13,7 +13,7 @@ export class RxjsTutorialComponent implements OnInit {
   timer = new BehaviorSubject<number>(0);
   ngOnInit(): void {
     //es wird jede 2 Sekunden aufgerufen
-    this.timer.pipe(throttle((val) => interval(2000))).subscribe((value) => {
+    this.timer.pipe(throttleTime(2000)).subscribe((value) => {
       console.log(value);
     });
 
